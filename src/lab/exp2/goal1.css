@@ -8,6 +8,7 @@ var S7=["John goes to the library and studies","John studies and goes to the lib
 var S8=["John ate an apple so did she","she ate an apple so did John"]
 var S9=["the teacher returned the book after she noticed the error","the teacher noticed the error after she returned the book","after the teacher returned the book she noticed the error","after the teacher noticed the error she returned the book","she returned the book after the teacher noticed the error","she noticed the error after the teacher returned the book","after she returned the book the teacher noticed the error","after she noticed the error the teacher returned the book"]
 var S10=["I told her that I bought a book yesterday","I told her yesterday that I bought a book","yesterday I told her that I bought a book","I bought a book that I told her yesterday","I bought a book yesterday that I told her"	,"yesterday I bought a book that I told her"]
+var v1=["John goes to the library and studies","Mary and John went to church","some students like to study in the night","John ate an apple before afternoon","John went to church after eating","did he go to market","the woman who called my sister sells cosmetics","the teacher returned the book after she noticed the error","I told her that I bought a book yesterday","John ate an apple so did she"]
 var H1=["राम और श्याम बाजार गयें","राम और श्याम गयें बाजार","बाजार गयें राम और श्याम","गयें बाजार राम और श्याम"]
 var H2=["राम सोया और श्याम भी","श्याम सोया और राम भी","सोया श्याम और राम भी","सोया राम और श्याम भी"]
 var H3=["मैंने उसे बताया कि राम सो रहा है","मैंने उसे बताया कि सो रहा है राम","उसे मैंने बताया कि राम सो रहा है","उसे मैंने बताया कि सो रहा है राम","मैंने बताया उसे कि राम सो रहा है","मैंने बताया उसे कि सो रहा है राम","उसे बताया मैंने कि राम सो रहा है","उसे बताया मैंने कि सो रहा है राम","बताया मैंने उसे कि राम सो रहा है","बताया मैंने उसे कि सो रहा है राम","बताया उसे मैंने कि राम सो रहा है","बताया उसे मैंने कि सो रहा है राम"]
@@ -15,22 +16,55 @@ var H4=["राम खाकर सोया","खाकर राम सोय�
 var H5=["बिल्लियों को मारकर कुत्ता सो गया" ,"मारकर बिल्लियों को कुत्ता सो गया" ,"बिल्लियों को मारकर सो गया कुत्ता","मारकर बिल्लियों को सो गया कुत्ता"	,"कुत्ता सो गया बिल्लियों को मारकर"	,"कुत्ता सो गया मारकर बिल्लियों को","सो गया कुत्ता बिल्लियों को मारकर","सो गया कुत्ता मारकर बिल्लियों को"]
 var H6=["एक लाल किताब वहाँ है","एक लाल किताब है वहाँ","वहाँ है एक लाल किताब","है वहाँ एक लाल किताब"]
 var H7=["एक बड़ी सी किताब वहाँ है	","एक बड़ी सी किताब है वहाँ","बड़ी सी एक किताब वहाँ है","बड़ी सी एक किताब है वहाँ","वहाँ है एक बड़ी सी किताब","वहाँ है बड़ी सी एक किताब"," है वहाँ एक बड़ी सी किताब","है वहाँ बड़ी सी एक किताब"] 
-var H7=["एक बड़ी सी किताब वहाँ है	","एक बड़ी सी किताब है वहाँ","बड़ी सी एक किताब वहाँ है","बड़ी सी एक किताब है वहाँ","वहाँ है एक बड़ी सी किताब","वहाँ है बड़ी सी एक किताब"," है वहाँ एक बड़ी सी किताब","है वहाँ बड़ी सी एक किताब"] 
-
-
+var v2=["राम और श्याम गयें बाजार","श्याम सोया और राम भी","मैंने उसे बताया कि राम सो रहा है","राम सोया खाकर","बिल्लियों को मारकर कुत्ता सो गया"	,"एक लाल किताब वहाँ है","एक बड़ी सी किताब वहाँ है	"]
 function func()
 {
+	document.getElementById("p1").innerHTML=""
+	document.getElementById("p2").innerHTML=""
+    document.getElementById("p3").innerHTML=""
+    document.getElementById("sen2").style.visibility="hidden";
+	count=0
 if(document.getElementById("english").selected)
 {
-	document.getElementById("line1").innerHTML="Form a sentence (Declarative or Interrogative or any other type) from the given words"
-	document.getElementById("line2").innerHTML="(select the buttons in proper order)"
+@@ -45,6 +48,20 @@ if(document.getElementById("english").selected)
+		let button = document.createElement("button");
+        button.innerHTML = e1[i]
+        body.appendChild(button);
+
+         button.addEventListener ("click",function()
+        {
+            document.getElementById("p2").innerHTML="Formed Sentences" 
+            document.getElementById("p4").innerHTML="(after selecting words):"
+            document.getElementById("p3").innerHTML+=this.innerHTML+" ";
+            this.style.visibility="hidden";
+            count=count+1;
+            if(count == 1)
+            {
+                document.getElementById("sen2").style.visibility="visible";
+            }
+
+        });
+    }
 }
 else if (document.getElementById("hindi").selected) 
-{
-	document.getElementById("line1").innerHTML="Form a sentence (Declarative or Interrogative or any other type) from the given words"
-	document.getElementById("line2").innerHTML="(select the buttons in proper order)"
+@@ -66,6 +83,20 @@ else if (document.getElementById("hindi").selected)
+        let button = document.createElement("button");
+        button.innerHTML = h1[i]
+        body.appendChild(button)
+         button.addEventListener ("click",function()
+        {
+            document.getElementById("p2").innerHTML="Formed Sentences" 
+            document.getElementById("p4").innerHTML="(after selecting words)"
+            document.getElementById("p3").innerHTML+=this.innerHTML+" ";
+            this.style.visibility="hidden";
+            count=count+1;
+            if(count == 1)
+            {
+                document.getElementById("sen2").style.visibility="visible";
+            }
+
+        });
+
+    }
 }
 else
-{
-	alert("Select Language")
-}
