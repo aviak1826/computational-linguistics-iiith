@@ -26,45 +26,71 @@ function func()
 	count=0
 if(document.getElementById("english").selected)
 {
-@@ -45,6 +48,20 @@ if(document.getElementById("english").selected)
+	document.getElementById("line1").innerHTML="Form a sentence (Declarative or Interrogative or any other type) from the given words"
+	document.getElementById("line2").innerHTML="(select the buttons in proper order)"
+	var eng=v1[Math.floor(Math.random() * v1.length)];
+	let body = document.getElementsByTagName("p")[2];
+    e1=eng.split(" ");
+    
+	for(i=0;i<e1.length;i++)
+    {
+	    j=Math.floor(Math.random()*e1.length)
+	    e=e1[i];
+	    e1[i]=e1[j]
+	    e1[j]=e;
+    }
+    for(i=0;i<e1.length;i++)
+    {
 		let button = document.createElement("button");
+		button.id='button'+i;
         button.innerHTML = e1[i]
         body.appendChild(button);
 
-         button.addEventListener ("click",function()
-        {
-            document.getElementById("p2").innerHTML="Formed Sentences" 
-            document.getElementById("p4").innerHTML="(after selecting words):"
+@@ -56,7 +57,7 @@ if(document.getElementById("english").selected)
             document.getElementById("p3").innerHTML+=this.innerHTML+" ";
             this.style.visibility="hidden";
             count=count+1;
             if(count == 1)
+            if(count>0)
             {
                 document.getElementById("sen2").style.visibility="visible";
             }
-
-        });
-    }
-}
-else if (document.getElementById("hindi").selected) 
-@@ -66,6 +83,20 @@ else if (document.getElementById("hindi").selected)
+@@ -81,6 +82,7 @@ else if (document.getElementById("hindi").selected)
+    for(i=0;i<h1.length;i++)
+    {
         let button = document.createElement("button");
+        button.id='button'+i;
         button.innerHTML = h1[i]
         body.appendChild(button)
          button.addEventListener ("click",function()
-        {
-            document.getElementById("p2").innerHTML="Formed Sentences" 
-            document.getElementById("p4").innerHTML="(after selecting words)"
+@@ -90,7 +92,7 @@ else if (document.getElementById("hindi").selected)
             document.getElementById("p3").innerHTML+=this.innerHTML+" ";
             this.style.visibility="hidden";
             count=count+1;
             if(count == 1)
+            if(count>0)
             {
                 document.getElementById("sen2").style.visibility="visible";
             }
-
-        });
-
-    }
+@@ -104,4 +106,22 @@ else
+	alert("Select Language")
+	document.getElementById("p1").innerHTML=""
 }
-else
+}  
+} 
+function reset()
+{
+
+
+    for(i=0 ;i<=e1.length-1 || i<=h1.length-1;i++)
+
+	{
+
+        if(document.getElementById('button'+i).style.visibility=="hidden")
+
+    	document.getElementById('button'+i).style.visibility="visible";
+	    document.getElementById('p2').innerHTML=""
+	    document.getElementById('p3').innerHTML=""
+	    document.getElementById('p4').innerHTML=""
+	    document.getElementById('sen2').style.visibility="hidden"
+    } 
