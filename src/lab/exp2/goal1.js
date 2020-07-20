@@ -1,23 +1,36 @@
-ar S1=["John ate an apple before afternoon",
+var S1=["John ate an apple before afternoon",
 "before afternoon John ate an apple",
-"John before afternoon ate an apple"]
-var S2=["some students like to study in the night",
-"at night some students like to study"]
+"John before afternoon ate an apple"];
+
+var S2=["some students like to study in the night",at night some students like to study"];
+
 var S3=["John and Mary went to church",
 "Mary and John went to church"]
+"Mary and John went to church"];
+
 var S4=["John went to church after eating",
 	"after eating John went to church",
     "John after eating went to church"]
+    "John after eating went to church"];
+
 var S5=["did he go to market",
 "he did go to market"]
+"he did go to market"];
+
 var S6=["the woman who called my sister sells cosmetics",
 "the woman who sells cosmetics called my sister",
 "my sister who sells cosmetics called the woman",
 "my sister who called the woman sells cosmetics"]
+"my sister who called the woman sells cosmetics"];
+
 var S7=["John goes to the library and studies",
 "John studies and goes to the library"]
+"John studies and goes to the library"];
+
 var S8=["John ate an apple so did she",
 "she ate an apple so did John"]
+"she ate an apple so did John"];
+
 var S9=["the teacher returned the book after she noticed the error",
 "the teacher noticed the error after she returned the book",
 "after the teacher returned the book she noticed the error",
@@ -26,31 +39,51 @@ var S9=["the teacher returned the book after she noticed the error",
 "she noticed the error after the teacher returned the book",
 "after she returned the book the teacher noticed the error",
 "after she noticed the error the teacher returned the book"]
+"after she noticed the error the teacher returned the book"];
+
 var S10=["I told her that I bought a book yesterday",
 "I told her yesterday that I bought a book",
 "yesterday I told her that I bought a book",
 "I bought a book that I told her yesterday",
 "I bought a book yesterday that I told her"	,
 "yesterday I bought a book that I told her"]
+"yesterday I bought a book that I told her"];
+
 var v1=["John goes to the library and studies",
 "Mary and John went to church",
+
+let set1=[S1,S2,S3,S4,S5,S6,S7,S8,S9,S10];
+
+var v1=["John ate an apple before afternoon",
 "some students like to study in the night",
 "John ate an apple before afternoon",
+"John and Mary went to church",
 "John went to church after eating",
 "did he go to market",
 "the woman who called my sister sells cosmetics",
+"John goes to the library and studies",
+"John ate an apple so did she",
 "the teacher returned the book after she noticed the error",
 "I told her that I bought a book yesterday",
 "John ate an apple so did she"]
+
+
+"I told her that I bought a book yesterday"];
+
 //hindi sentences
 var H1=["राम और श्याम बाजार गयें",
 "राम और श्याम गयें बाजार",
 "बाजार गयें राम और श्याम",
 "गयें बाजार राम और श्याम"]
+"गयें बाजार राम और श्याम"];
+
 var H2=["राम सोया और श्याम भी",
 "श्याम सोया और राम भी",
 "सोया श्याम और राम भी",
 "सोया राम और श्याम भी"]
+"सोया राम और श्याम भी"];
+
+
 var H3=["मैंने उसे बताया कि राम सो रहा है",
 "मैंने उसे बताया कि सो रहा है राम",
 "उसे मैंने बताया कि राम सो रहा है",
@@ -63,12 +96,18 @@ var H3=["मैंने उसे बताया कि राम सो र�
 "बताया मैंने उसे कि सो रहा है राम",
 "बताया उसे मैंने कि राम सो रहा है",
 "बताया उसे मैंने कि सो रहा है राम"]
+"बताया उसे मैंने कि सो रहा है राम"];
+
+
 var H4=["राम खाकर सोया",
 "खाकर राम सोया",
 "राम सोया खाकर",
 "खाकर सोया राम",
 "सोया राम खाकर",
 "सोया खाकर राम"]
+"सोया खाकर राम"];
+
+
 var H5=["बिल्लियों को मारकर कुत्ता सो गया",
 "मारकर बिल्लियों को कुत्ता सो गया" ,
 "बिल्लियों को मारकर सो गया कुत्ता",
@@ -77,10 +116,16 @@ var H5=["बिल्लियों को मारकर कुत्ता �
 "कुत्ता सो गया मारकर बिल्लियों को",
 "सो गया कुत्ता बिल्लियों को मारकर",
 "सो गया कुत्ता मारकर बिल्लियों को"]
+"सो गया कुत्ता मारकर बिल्लियों को"];
+
+
 var H6=["एक लाल किताब वहाँ है",
 "एक लाल किताब है वहाँ",
 "वहाँ है एक लाल किताब",
 "है वहाँ एक लाल किताब"]
+"है वहाँ एक लाल किताब"];
+
+
 var H7=["एक बड़ी सी किताब वहाँ है",
 "एक बड़ी सी किताब है वहाँ",
 "बड़ी सी एक किताब वहाँ है",
@@ -89,6 +134,11 @@ var H7=["एक बड़ी सी किताब वहाँ है",
 "वहाँ है बड़ी सी एक किताब",
 " है वहाँ एक बड़ी सी किताब",
 "है वहाँ बड़ी सी एक किताब"] 
+"है वहाँ बड़ी सी एक किताब"] ;
+
+let set2=[H1,H2,H3,H4,H5,H6,H7];
+
+
 var v2=["राम और श्याम गयें बाजार",
 "श्याम सोया और राम भी",
 "मैंने उसे बताया कि राम सो रहा है",
@@ -96,6 +146,7 @@ var v2=["राम और श्याम गयें बाजार",
 "बिल्लियों को मारकर कुत्ता सो गया",
 "एक लाल किताब वहाँ है",
 "एक बड़ी सी किताब वहाँ है"]
+"एक बड़ी सी किताब वहाँ है"];
 
 
 let corpuseng=[["John ate an apple before afternoon",
@@ -132,6 +183,8 @@ let corpuseng=[["John ate an apple before afternoon",
 "yesterday I bought a book that I told her",
 "I bought a book that I told her yesterday",
 "I bought a book yesterday that I told her"]];
+"I bought a book yesterday that I told her",
+"yesterday I bought a book that I told her"]];
 
 let corpushin=[["राम और श्याम बाजार गयें",
 "राम और श्याम गयें बाजार",
@@ -179,26 +232,19 @@ let corpushin=[["राम और श्याम बाजार गयें",
 "वहाँ है बड़ी सी एक किताब",
 " है वहाँ एक बड़ी सी किताब",
 "है वहाँ बड़ी सी एक किताब"]];
-
-
-
-
 function disp(){
     document.getElementById("line1").innerHTML="Form a sentence (Declarative or Interrogative or any other type) from the given words"
     document.getElementById("line2").innerHTML="(select the buttons in proper order)"
 }
 function func3(){
-
 if (selection.value === "english") {
-
         document.getElementById("p1").innerHTML = "(select the buttons in proper order)"
         document.getElementById("p2").innerHTML = "Form a sentence (Declarative or Interrogative or any other type) from the given words"
 }
 }
-
 function resetfunc2()
 {
- for(i=0 ;i<s1.length || i<t1.length;i++)
+  for(i=0 ;i<s1.length || i<t1.length;i++)
     
     {
         if(document.getElementById('button'+i).style.display=="none")
@@ -208,18 +254,19 @@ function resetfunc2()
         document.getElementById('p3').innerHTML=""
         document.getElementById('p4').innerHTML=""
         document.getElementById("ans").innerHTML=""
+        document.getElementById("dispcrtans").innerHTML=""
          document.getElementById('btn1').style.visibility="hidden"
         document.getElementById('btn2').style.visibility="hidden"
 
+       document.getElementById('ID1').style.visibility="hidden"
     }
     } 
 
  }
-
 function rightorwrong(){
     n1=n2=0;
     var v5=String(document.getElementById("p3").innerHTML).replace(/\s+$/,"");
-
+    
     if(document.getElementById("english").selected)
     {
         for(i=0;i<10;i++)
@@ -230,12 +277,17 @@ function rightorwrong(){
                     n1++;}}
         if(n1 == 1)
         {
+        if(n1 == 1){
+
         document.getElementById("ans").innerHTML = "Right answer!!!"
             document.getElementById("ans").style.color = "green"
             return document.getElementById("ans").innerHTML = "Right answer!!!"}
-        else
+        else{
         document.getElementById("ans").innerHTML = "Wrong answer!!!"
-        document.getElementById("ans").style.color = "red"}
+        document.getElementById("ans").style.color = "red"
+
+        document.getElementById("ID1").innerHTML = "<button id='btn3'>Get Correct Sentence</button>"}}
+        document.getElementById("ID1").style.visibility="visible";}}
 
     else if(document.getElementById("hindi").selected){
     for(i=0;i<7;i++)
@@ -243,19 +295,21 @@ function rightorwrong(){
             for(j=0;j<corpushin[i].length;j++)
             {if(v5==corpushin[i][j])
                 n2++;}  }
-
+        
         if(n2== 1){
-
+        
          document.getElementById("ans").innerHTML = "Right answer!!!"
             document.getElementById("ans").style.color = "green"
             return document.getElementById("ans").innerHTML = "Right answer!!!"}
-        else
-
+        else{
+        
             document.getElementById("ans").innerHTML = "Wrong answer!!!"
-        document.getElementById("ans").style.color = "red"}
+        document.getElementById("ans").style.color = "red"
 
+     document.getElementById("ID1").innerHTML = "<button id='btn3'>Get Correct Sentence</button>"}}
+     document.getElementById("ID1").style.visibility="visible";}}
+}   
 
-}
 
 function func1()
 {
@@ -265,9 +319,14 @@ function func1()
     document.getElementById("p3").innerHTML=""
     document.getElementById("p4").innerHTML=""
     document.getElementById("ans").innerHTML=""
+    document.getElementById("dispcrtans").innerHTML=""
     document.getElementById("btn1").style.visibility="hidden";
     document.getElementById("btn2").style.visibility="hidden";
- s=v1[Math.floor(Math.random() * v1.length)];
+
+ document.getElementById("ID1").style.visibility="hidden";
+
+	//Splitting the english sentences 
+    s=v1[Math.floor(Math.random() * v1.length)];
     s1=s.split(" ");
     //Splitting the hindi sentences
     t=v2[Math.floor(Math.random() * v2.length)];
@@ -281,7 +340,7 @@ if(document.getElementById("english").selected)
     
 	for(i=0;i<s1.length;i++)
     {
- j=Math.floor(Math.random()*s1.length)
+	    j=Math.floor(Math.random()*s1.length)
 	    e=s1[i];
 	    s1[i]=s1[j]
 	    s1[j]=e;
@@ -292,15 +351,15 @@ if(document.getElementById("english").selected)
 		button.id='button'+i;
         button.innerHTML = s1[i]
         body.appendChild(button);
-
          button.addEventListener ("click",function()
-{document.getElementById("p2").innerHTML="Formed Sentences" 
+        {document.getElementById("p2").innerHTML="Formed Sentences" 
         document.getElementById("p4").innerHTML="(after selecting words):"
          document.getElementById("p3").innerHTML+=this.innerHTML+" ";this.style.display="none";
             cnt+=1;
             if(cnt>0)
             {document.getElementById("btn1").style.visibility="visible";}
-  var d=String(document.getElementById("p3").innerHTML).replace(/\s+$/,"");
+            
+            var d=String(document.getElementById("p3").innerHTML).replace(/\s+$/,"");
             d1=d.split(" ");
             if(s1.length == d1.length)
                 document.getElementById("btn2").style.visibility="visible";
@@ -317,24 +376,23 @@ else if (document.getElementById("hindi").selected)
 	let body = document.getElementsByTagName("p")[2];
             for(i=0;i<t1.length;i++)
     {
- j=Math.floor(Math.random()*t1.length)
+	    j=Math.floor(Math.random()*t1.length)
 	    e=t1[i];
 	    t1[i]=t1[j]
 	    t1[j]=e;
     }
               for(i=0;i<t1.length;i++)
     {
-et button = document.createElement("button");
+let button = document.createElement("button");
  button.id='button'+i;
  button.innerHTML = t1[i]
  body.appendChild(button)
-
-
-
   button.addEventListener ("click",function()
  { document.getElementById("p2").innerHTML="Formed Sentences" 
 document.getElementById("p4").innerHTML="(after selecting words)"
         document.getElementById("p3").innerHTML+=this.innerHTML+" ";this.style.display="none";
+        document.getElementById("p3").innerHTML+=this.innerHTML+" ";
+        this.style.display="none";
             cnt+=1;
             if(cnt>0)
             {document.getElementById("btn1").style.visibility="visible";}
@@ -342,10 +400,7 @@ document.getElementById("p4").innerHTML="(after selecting words)"
             b1=b.split(" ");
             if(t1.length == b1.length)
                 document.getElementById("btn2").style.visibility="visible";
-
-
         });
-
     }
 }
 else
@@ -353,3 +408,26 @@ else
 	alert("Select Language")
 }
 } 
+
+function crtans()
+{a=v1.indexOf(s)
+  c1 = corpuseng[a];
+    b=v2.indexOf(t)
+    c2 = corpushin[b];
+
+    if(document.getElementById("english").selected){
+            if(document.getElementById("ID1").innerHTML == "Get Correct Sentence"){
+        for(i=0;i<c1.length;i++){
+            document.getElementById("dispcrtans").innerHTML+=c1[i]+"<br>";
+         document.getElementById("ID1").innerHTML="Hide Correct Sentence"}}
+        else if(document.getElementById("ID1").innerHTML="Hide Correct Sentence"){
+            document.getElementById("dispcrtans").innerHTML=""
+            document.getElementById("ID1").innerHTML="Get Answers"}}
+    else if(document.getElementById("hindi").selected){
+    if(document.getElementById("ID1").innerHTML == "Get Correct Sentence"){
+        for(i=0;i<temp1.length;i++){
+                            document.getElementById("dispcrtans").innerHTML+=temp1[i]+"<br>";
+                document.getElementById("ID1").innerHTML="Hide Correct Sentence"}}
+        else if(document.getElementById("ID1").innerHTML="Hide Correct Sentence"){
+        document.getElementById("dispcrtans").innerHTML=""
+         document.getElementById("ID1").innerHTML="Get Answers"}}
