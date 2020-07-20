@@ -29,33 +29,37 @@ body{
 button {
     width: 80px;
     height: 25px;
-@@ -32,12 +38,12 @@ button {
+    margin: 5px; 
+  }
+  p { margin: 0 !important; }
   #p2{
     font-size: 20px;
     color: darkblue;
-	display: inline;
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
 }
 #p4{
-	display: inline;
-	font-size: 20px;
     display: inline;
     font-size: 20px;
     color:blue;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-@@ -51,11 +57,9 @@ button {
+}
+#p3{
+    font-size: 35px;
+    color: #3d3d5c;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
 }
-#sen2 {
-      width: 170px;
 #btn2{
      width: 290px;
     height: 25px;
     font-size: 15px;
-    margin: 10px; 
 
-
+}
+#ans{
+    font-size:30px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
 }
